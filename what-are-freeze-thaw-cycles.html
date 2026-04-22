@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<meta name="description" content="Practical guidance on asphalt, concrete, and site maintenance from Atlantic Mason — serving NY, NJ, and CT.">
-<title>Insights — Atlantic Mason</title>
+<meta name="description" content="What Are Freeze–Thaw Cycles? — Atlantic Mason Insights">
+<title>What Are Freeze–Thaw Cycles? — Atlantic Mason</title>
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Sans:wght@300;400;500&display=swap');
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;font-size:16px;}
@@ -18,57 +19,12 @@ nav{position:sticky;top:0;z-index:200;height:64px;padding:0 56px;display:flex;al
 .nav-links a:hover{color:var(--ink);}
 .nav-cta{font-family:"Instrument Sans",sans-serif;font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;background:var(--ink);color:var(--cream);border:none;padding:10px 20px;cursor:pointer;transition:background .2s;white-space:nowrap;}
 .nav-cta:hover{background:var(--brown);}
-
-/* PAGE HEADER */
-.page-header{padding:80px 56px 64px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;}
-.page-header-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--brown);margin-bottom:14px;}
-.page-header-h1{font-family:"Playfair Display",serif;font-size:clamp(40px,5vw,64px);font-weight:400;line-height:1.05;letter-spacing:-1.5px;color:var(--ink);}
-.page-header-h1 em{font-style:italic;color:var(--brown);}
-.page-header-desc{font-size:15px;line-height:1.85;color:var(--ink2);font-weight:300;}
-
-/* FEATURED */
-.featured-article{border-bottom:1px solid var(--line);}
-.featured-article-inner{display:grid;grid-template-columns:3fr 2fr;text-decoration:none;transition:background .2s;}
-.featured-article-inner:hover{background:var(--cream2);}
-.featured-left{padding:56px 56px;border-right:1px solid var(--line);}
-.featured-right{padding:56px 48px;background:var(--dark);display:flex;align-items:center;}
-.featured-tag{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--brown);margin-bottom:16px;}
-.featured-title{font-family:"Playfair Display",serif;font-size:clamp(24px,3vw,36px);font-weight:400;line-height:1.12;letter-spacing:-0.5px;color:var(--ink);margin-bottom:16px;}
-.featured-intro{font-size:15px;line-height:1.8;color:var(--ink2);font-weight:300;margin-bottom:20px;}
-.featured-meta{font-size:12px;color:var(--ink3);margin-bottom:20px;}
-.featured-link{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--brown);border-bottom:1px solid var(--line);padding-bottom:2px;}
-.featured-quote{}
-.featured-quote-mark{font-family:"Playfair Display",serif;font-size:72px;color:var(--brown);line-height:0.8;display:block;margin-bottom:12px;opacity:0.6;}
-.featured-quote p{font-family:"Playfair Display",serif;font-size:20px;font-style:italic;color:var(--cream);line-height:1.5;font-weight:400;}
-.featured-quote-attr{font-size:12px!important;color:var(--brown-lt)!important;font-style:normal!important;margin-top:12px!important;}
-
-/* ARTICLE GRID */
-.articles-section{padding:72px 56px;border-bottom:1px solid var(--line);}
-.articles-section-title{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--brown);margin-bottom:40px;}
-.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);}
-.article-card{padding:36px 32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none;display:flex;flex-direction:column;transition:background .2s;}
-.article-card:nth-child(3n){border-right:none;}
-.article-card:nth-last-child(-n+3){border-bottom:none;}
-.article-card:hover{background:var(--cream2);}
-.article-card-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--brown);margin-bottom:14px;}
-.article-card-title{font-family:"Playfair Display",serif;font-size:20px;font-weight:400;line-height:1.2;color:var(--ink);margin-bottom:12px;}
-.article-card-intro{font-size:13px;line-height:1.75;color:var(--ink2);font-weight:300;flex:1;margin-bottom:16px;}
-.article-card-meta{font-size:11px;color:var(--ink3);margin-bottom:14px;}
-.article-card-link{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--brown);border-bottom:1px solid var(--line);padding-bottom:2px;display:inline-block;}
-.article-card:hover .article-card-link{color:var(--ink);border-color:var(--ink);}
-
-/* CTA STRIP */
-.cta-strip{background:var(--ink);padding:64px 56px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;border-bottom:1px solid var(--brown-dark);}
-.cta-strip-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--brown-lt);margin-bottom:14px;}
-.cta-strip-h2{font-family:"Playfair Display",serif;font-size:clamp(28px,3vw,40px);font-weight:400;line-height:1.1;letter-spacing:-0.5px;color:var(--cream);margin-bottom:12px;}
-.cta-strip-h2 em{font-style:italic;color:var(--brown-lt);}
-.cta-strip-desc{font-size:15px;color:rgba(250,247,242,0.55);font-weight:300;line-height:1.8;}
-.cta-strip-right{display:flex;flex-direction:column;gap:20px;}
-.cta-strip-phone{font-family:"Playfair Display",serif;font-size:36px;font-weight:400;color:var(--cream);letter-spacing:-1px;text-decoration:none;display:block;}
-.cta-strip-email{font-size:15px;color:var(--brown-lt);text-decoration:none;}
-.btn-light{font-family:"Instrument Sans",sans-serif;font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;background:var(--cream);color:var(--ink);border:none;padding:14px 32px;cursor:pointer;text-decoration:none;display:inline-block;transition:background .2s;margin-top:8px;}
-.btn-light:hover{background:var(--cream3);}
-
+.eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--brown);margin-bottom:14px;}
+.sh2{font-family:"Playfair Display",serif;font-size:clamp(28px,3vw,44px);font-weight:400;line-height:1.08;letter-spacing:-0.5px;color:var(--ink);margin-bottom:20px;}
+.sh2 em{font-style:italic;color:var(--brown);}
+.body-text{font-size:15px;line-height:1.85;color:var(--ink2);font-weight:300;}
+.btn-dark{font-family:"Instrument Sans",sans-serif;font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;background:var(--ink);color:var(--cream);border:none;padding:14px 32px;cursor:pointer;text-decoration:none;display:inline-block;transition:background .2s;}
+.btn-dark:hover{background:var(--brown);}
 footer{background:var(--cream);border-top:1px solid var(--line);padding:56px 56px 0;}
 .ft-top{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--line);}
 .ft-logo{text-decoration:none;}
@@ -85,23 +41,58 @@ footer{background:var(--cream);border-top:1px solid var(--line);padding:56px 56p
   nav{padding:0 20px;height:56px;}
   .nav-links{display:none;}
   .nav-cta{padding:8px 14px;font-size:10px;}
-  .page-header{grid-template-columns:1fr;gap:24px;padding:48px 20px 40px;}
-  .featured-article-inner{grid-template-columns:1fr;}
-  .featured-left{padding:40px 20px;border-right:none;border-bottom:1px solid var(--line);}
-  .featured-right{padding:36px 20px;}
-  .articles-section{padding:48px 20px;}
-  .articles-grid{grid-template-columns:1fr;}
-  .article-card{border-right:none!important;}
-  .article-card:nth-last-child(-n+3){border-bottom:1px solid var(--line);}
-  .article-card:last-child{border-bottom:none;}
-  .cta-strip{grid-template-columns:1fr;gap:32px;padding:48px 20px;}
   footer{padding:40px 20px 0;}
   .ft-top{grid-template-columns:1fr 1fr;gap:28px;}
 }
 @media(max-width:600px){
   .ft-top{grid-template-columns:1fr;}
-  .featured-quote-mark{font-size:48px;}
-  .featured-quote p{font-size:16px;}
+}
+
+.art-hero{padding:72px 56px 56px;border-bottom:1px solid var(--line);max-width:800px;}
+.art-tag{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--brown);margin-bottom:16px;}
+.art-h1{font-family:"Playfair Display",serif;font-size:clamp(32px,4vw,52px);font-weight:400;line-height:1.08;letter-spacing:-1px;color:var(--ink);margin-bottom:20px;}
+.art-h1 em{font-style:italic;color:var(--brown);}
+.art-meta{font-size:12px;color:var(--ink3);letter-spacing:0.5px;margin-bottom:24px;}
+.art-intro{font-size:18px;line-height:1.8;color:var(--ink2);font-weight:300;font-family:"Playfair Display",serif;font-style:italic;}
+.art-body{display:grid;grid-template-columns:1fr 280px;gap:0;border-bottom:1px solid var(--line);}
+.art-content{padding:56px 56px 72px;border-right:1px solid var(--line);}
+.art-content h2{font-family:"Playfair Display",serif;font-size:24px;font-weight:400;letter-spacing:-0.3px;color:var(--ink);margin:44px 0 16px;line-height:1.2;}
+.art-content h2:first-child{margin-top:0;}
+.art-content p{font-size:15px;line-height:1.9;color:var(--ink2);font-weight:300;margin-bottom:20px;}
+.art-content ul{list-style:none;margin:0 0 20px;}
+.art-content ul li{font-size:15px;line-height:1.8;color:var(--ink2);font-weight:300;padding:8px 0;border-bottom:1px solid var(--line);display:flex;align-items:flex-start;gap:10px;}
+.art-content ul li::before{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--brown);flex-shrink:0;margin-top:9px;}
+.art-content strong{font-weight:500;color:var(--ink);}
+.art-sidebar{padding:56px 40px;background:var(--cream2);}
+.art-sidebar-block{margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid var(--line);}
+.art-sidebar-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.art-sidebar-title{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--brown);margin-bottom:14px;}
+.art-sidebar-link{display:block;font-size:13px;color:var(--ink2);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--line);font-weight:300;transition:color .2s;line-height:1.5;}
+.art-sidebar-link:hover{color:var(--ink);}
+.art-sidebar-link:last-child{border-bottom:none;}
+.art-cta-box{background:var(--ink);padding:24px;}
+.art-cta-box p{font-size:13px;color:rgba(250,247,242,0.65);line-height:1.7;font-weight:300;margin-bottom:16px;}
+.art-cta-box a{font-family:"Instrument Sans",sans-serif;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;background:var(--cream);color:var(--ink);border:none;padding:12px 20px;cursor:pointer;text-decoration:none;display:inline-block;transition:background .2s;}
+.art-nav{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);}
+.art-nav-link{padding:32px 40px;text-decoration:none;border-right:1px solid var(--line);transition:background .2s;display:flex;flex-direction:column;gap:6px;}
+.art-nav-link:last-child{border-right:none;}
+.art-nav-link:hover{background:var(--cream2);}
+.art-nav-dir{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--brown);}
+.art-nav-title{font-family:"Playfair Display",serif;font-size:15px;font-weight:400;color:var(--ink);line-height:1.4;}
+.art-nav-next{text-align:right;}
+.breadcrumb{padding:16px 56px;border-bottom:1px solid var(--line);background:var(--cream2);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.breadcrumb a{font-size:12px;color:var(--brown);text-decoration:none;}
+.breadcrumb span{font-size:12px;color:var(--ink3);}
+@media(max-width:900px){
+  .art-hero{padding:48px 20px 40px;}
+  .art-body{grid-template-columns:1fr;}
+  .art-content{padding:40px 20px 56px;border-right:none;border-bottom:1px solid var(--line);}
+  .art-sidebar{padding:40px 20px;}
+  .art-nav{grid-template-columns:1fr;}
+  .art-nav-link{border-right:none;border-bottom:1px solid var(--line);padding:24px 20px;}
+  .art-nav-link:last-child{border-bottom:none;}
+  .art-nav-next{text-align:left;}
+  .breadcrumb{padding:12px 20px;}
 }
 </style>
 </head>
@@ -119,96 +110,67 @@ footer{background:var(--cream);border-top:1px solid var(--line);padding:56px 56p
   </ul>
   <button class="nav-cta" onclick="window.location='get-a-quote.html'">Get a quote</button>
 </nav>
-
-<div class="page-header">
-  <div>
-    <div class="page-header-eyebrow">From the field</div>
-    <h1 class="page-header-h1">Insights &amp;<br><em>resources</em></h1>
-  </div>
-  <p class="page-header-desc">Practical guidance on asphalt, concrete, and site maintenance for property owners and managers. No jargon, no filler — just what you need to know to make smart decisions about your property.</p>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="insights.html">Insights</a><span>›</span>
+  <span>What Are Freeze–Thaw Cycles?</span>
 </div>
+<div class="art-hero">
+  <div class="art-tag">Education</div>
+  <h1 class="art-h1">What Are Freeze–Thaw Cycles?</h1>
+  <div class="art-meta">Atlantic Mason &nbsp;·&nbsp; January 16, 2026 &nbsp;·&nbsp; 4 min read</div>
+  <p class="art-intro">Freeze–thaw cycles describe what happens when temperatures repeatedly move above and below freezing, causing water to freeze, thaw, and freeze again inside the ground and construction materials. This cycle is one of the most damaging natural forces affecting asphalt, concrete, and masonry in colder climates. It's not just the cold that causes problems — it's the constant change.</p>
+</div>
+<div class="art-body">
+  <div class="art-content">
+    
+<h2>How a freeze–thaw cycle works</h2>
+<p>Water seeps into small cracks, joints, and pores in pavement or the ground below — no surface is completely waterproof, especially over time. When temperatures drop below freezing, the water turns to ice. Ice expands, taking up more space than liquid water. That expansion creates internal pressure, pushing against the surrounding material. When temperatures rise, the ice melts and leaves behind slightly larger voids. With each cycle, damage accumulates. What starts as a hairline crack can grow into a visible failure.</p>
 
+<h2>Why freeze–thaw cycles are so damaging</h2>
+<p>The repeated expansion and contraction widens cracks, loosens aggregates, weakens subbase materials, and allows even more water to enter. This creates a feedback loop — more water leads to more freezing, which leads to more damage. It's especially problematic when combined with traffic loads, which stress already weakened areas.</p>
 
-<div class="featured-article">
-  <a href="how-to-know-if-price-is-fair.html" class="featured-article-inner">
-    <div class="featured-left">
-      <div class="featured-tag">Pricing</div>
-      <h2 class="featured-title">How Do I Know If the Price I'm Getting Is Fair?</h2>
-      <p class="featured-intro">At some point, almost everyone asking for paving or site work thinks the same thing: "Is this a fair price… or am I getting ripped off?" That question is normal. Here's how to think through it.</p>
-      <div class="featured-meta">Jan 16, 2026 &nbsp;·&nbsp; 6 min read</div>
-      <span class="featured-link">Read article →</span>
+<h2>How freeze–thaw affects different materials</h2>
+<p><strong>Asphalt</strong> — its flexibility helps absorb some movement, but once cracks form, water intrusion accelerates deterioration. Over time, this leads to alligator cracking, potholes, and surface breakdown.</p>
+<p><strong>Concrete</strong> — concrete is rigid and porous. If water freezes inside or beneath it, internal pressure can cause cracking, scaling, or surface spalling, especially if the concrete wasn't properly air-entrained or cured.</p>
+<p><strong>Masonry</strong> — brick, block, and stone can absorb water. Freeze–thaw pressure can crack units, deteriorate mortar joints, and cause long-term structural or cosmetic damage if moisture isn't properly managed.</p>
+
+<h2>Why drainage matters so much</h2>
+<p>Freeze–thaw damage is less about temperature alone and more about water presence. Good drainage reduces standing water, saturated subbase conditions, and repeated moisture intrusion. That's why proper slope, base preparation, and water management are just as important as the surface material itself.</p>
+
+<h2>Can freeze–thaw damage be prevented?</h2>
+<p>It can't be eliminated entirely in cold climates, but it can be managed. Common strategies include proper subbase compaction, adequate slope and drainage, crack sealing and joint maintenance, and material selection appropriate for the climate.</p>
+
+<h2>The big picture</h2>
+<p>Freeze–thaw cycles are a natural process that slowly breaks down hard surfaces in cold climates. Materials that are designed, installed, and maintained with freeze–thaw conditions in mind perform far better over time. If you have questions about freeze–thaw damage or how to protect your surfaces, feel free to reach out to us at Atlantic Mason.</p>
+
+    <div style="margin-top:48px;padding-top:40px;border-top:1px solid var(--line);">
+      <p style="font-size:13px;color:var(--ink3);font-weight:300;">Atlantic Mason works with property owners, managers, and general contractors across New York, New Jersey, and Connecticut on asphalt paving, concrete flatwork, and site improvements. We emphasize clear communication, honest pricing, and work that lasts.</p>
     </div>
-    <div class="featured-right">
-      <div class="featured-quote">
-        <span class="featured-quote-mark">"</span>
-        <p>Is this a fair price… or am I getting ripped off?</p>
-        <p class="featured-quote-attr">— The question every property owner asks</p>
+  </div>
+  <div class="art-sidebar">
+    <div class="art-sidebar-block">
+      <div class="art-cta-box">
+        <p>Have a project in mind? We'll come take a look and give you a straight answer.</p>
+        <a href="get-a-quote.html">Get a free quote →</a>
       </div>
     </div>
-  </a>
-</div>
-
-<div class="articles-section">
-  <div class="articles-section-title">All articles</div>
-  <div class="articles-grid">
-    
-<a href="parking-lot-repairs-where-to-start.html" class="article-card">
-  <div class="article-card-tag">Asphalt</div>
-  <h3 class="article-card-title">My Parking Lot Needs Repairs — But the Options Are Overwhelming. Where Do I Start?</h3>
-  <p class="article-card-intro">Parking lots are confusing because the surface damage you see is often caused by things you don't see: water, base conditions, drainage, traffic loads, and time. This guide breaks it down clearly.</p>
-  <div class="article-card-meta">Jan 16, 2026 &nbsp;·&nbsp; 8 min read</div>
-  <span class="article-card-link">Read more →</span>
-</a>
-<a href="why-is-asphalt-hard-to-pave-in-winter.html" class="article-card">
-  <div class="article-card-tag">Asphalt</div>
-  <h3 class="article-card-title">Why Is It Hard to Pave Asphalt in the Winter?</h3>
-  <p class="article-card-intro">Think of asphalt like warm clay. The colder it is, the less time you have before it stops behaving the way it needs to — and that's the core of why winter paving is risky.</p>
-  <div class="article-card-meta">Jan 16, 2026 &nbsp;·&nbsp; 5 min read</div>
-  <span class="article-card-link">Read more →</span>
-</a>
-<a href="what-are-freeze-thaw-cycles.html" class="article-card">
-  <div class="article-card-tag">Education</div>
-  <h3 class="article-card-title">What Are Freeze–Thaw Cycles?</h3>
-  <p class="article-card-intro">Freeze–thaw cycles are one of the most damaging natural forces affecting asphalt, concrete, and masonry in colder climates. It's not just the cold — it's the constant change.</p>
-  <div class="article-card-meta">Jan 16, 2026 &nbsp;·&nbsp; 4 min read</div>
-  <span class="article-card-link">Read more →</span>
-</a>
-<a href="asphalt-vs-concrete.html" class="article-card">
-  <div class="article-card-tag">Education</div>
-  <h3 class="article-card-title">Asphalt vs. Concrete: What's the Difference?</h3>
-  <p class="article-card-intro">Asphalt and concrete are used in many of the same places but behave very differently. Think of asphalt as flexible and forgiving, and concrete as rigid and precise.</p>
-  <div class="article-card-meta">Jan 16, 2026 &nbsp;·&nbsp; 6 min read</div>
-  <span class="article-card-link">Read more →</span>
-</a>
-<a href="asphalt-mixes-by-climate.html" class="article-card">
-  <div class="article-card-tag">Asphalt</div>
-  <h3 class="article-card-title">Do Asphalt Mixes Vary by State or Climate?</h3>
-  <p class="article-card-intro">Yes — asphalt mixes vary by both state and climate. The differences are driven by engineering standards, environmental conditions, and how the pavement is expected to perform over time.</p>
-  <div class="article-card-meta">Jan 16, 2026 &nbsp;·&nbsp; 4 min read</div>
-  <span class="article-card-link">Read more →</span>
-</a>
-  </div>
-</div>
-
-<div class="cta-strip">
-  <div>
-    <div class="cta-strip-eyebrow">Have a project?</div>
-    <h2 class="cta-strip-h2">Let's talk about<br><em>your site</em></h2>
-    <p class="cta-strip-desc">Whether you need a parking lot paved, concrete flatwork laid, or just want to understand your options — we'll give you a straight answer and a real number.</p>
-    <a href="get-a-quote.html" class="btn-light" style="margin-top:24px;">Request a free quote</a>
-  </div>
-  <div class="cta-strip-right">
-    <div>
-      <div class="cta-strip-eyebrow">Call or text</div>
-      <a href="tel:9297050081" class="cta-strip-phone">(929) 705-0081</a>
+    <div class="art-sidebar-block">
+      <div class="art-sidebar-title">More articles</div>
+      <a href="how-to-know-if-price-is-fair.html" class="art-sidebar-link">How Do I Know If the Price I'm Getting Is Fair?</a><a href="parking-lot-repairs-where-to-start.html" class="art-sidebar-link">My Parking Lot Needs Repairs — But the Options Are Overwhelming. Where Do I Start?</a><a href="why-is-asphalt-hard-to-pave-in-winter.html" class="art-sidebar-link">Why Is It Hard to Pave Asphalt in the Winter?</a><a href="asphalt-vs-concrete.html" class="art-sidebar-link">Asphalt vs. Concrete: What's the Difference and Which Is Right for Your Property?</a><a href="asphalt-mixes-by-climate.html" class="art-sidebar-link">Do Asphalt Mixes Vary by State or Climate?</a>
     </div>
-    <div>
-      <div class="cta-strip-eyebrow">Email</div>
-      <a href="mailto:contact@atlanticmason.com" class="cta-strip-email">contact@atlanticmason.com</a>
+    <div class="art-sidebar-block">
+      <div class="art-sidebar-title">Contact us</div>
+      <a href="tel:9297050081" class="art-sidebar-link">(929) 705-0081</a>
+      <a href="mailto:contact@atlanticmason.com" class="art-sidebar-link">contact@atlanticmason.com</a>
+      <a href="https://wa.me/19297050081" class="art-sidebar-link" target="_blank">WhatsApp us</a>
     </div>
   </div>
 </div>
-
+<div class="art-nav">
+  <a href="why-is-asphalt-hard-to-pave-in-winter.html" class="art-nav-link art-nav-prev"><span class="art-nav-dir">← Previous</span><span class="art-nav-title">Why Is It Hard to Pave Asphalt in the Winter?</span></a>
+  <a href="asphalt-vs-concrete.html" class="art-nav-link art-nav-next"><span class="art-nav-dir">Next →</span><span class="art-nav-title">Asphalt vs. Concrete: What's the Difference and Which Is Right for Your Property?</span></a>
+</div>
 <footer>
   <div class="ft-top">
     <div>
