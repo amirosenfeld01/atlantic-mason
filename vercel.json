@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/asphalt-paving.html",
+      "destination": "/services.html#asphalt",
+      "permanent": true
+    },
+    {
+      "source": "/concrete-flatwork.html",
+      "destination": "/services.html#concrete",
+      "permanent": true
+    }
+  ]
+}
